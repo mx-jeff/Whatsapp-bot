@@ -1,0 +1,18 @@
+======================================(WhatsApp Bot)===============================================
+
+Requerimentos:
+    - selenium
+    - Google Chrome: ChromeDriver
+
+Instalação:
+    - selenium: instalação via pip e pyCharm.
+        abra o cmd e digite o comando "pip install selenium" (sem aspas)
+
+        se estiver usando pyCharm, importe selenium normalmente, e clique no nome,
+        (grifado em vermelho), e aperte a luz vermelha, depois clique em instalar o comando
+        "selenium", requer desativar o antirus.
+
+    - Chrome Driver: baixe e estraia o zip do site oficial:
+        - http://chromedriver.chromium.org/downloads
+        Especifique o caminho até onde você instalou no script,
+        Ex: driver = webdriver.Chrome("../chromedriver.exe")
