@@ -1,18 +1,41 @@
 ======================================(WhatsApp Bot)===============================================
 
 Requerimentos:
+    - python
     - selenium
     - Google Chrome: ChromeDriver
 
 Instalação:
-    - selenium: instalação via pip e pyCharm.
-        abra o cmd e digite o comando "pip install selenium" (sem aspas)
 
-        se estiver usando pyCharm, importe selenium normalmente, e clique no nome,
-        (grifado em vermelho), e aperte a luz vermelha, depois clique em instalar o comando
-        "selenium", requer desativar o antirus.
+    - python: instalação via site oficial
+        via: https://www.python.org/downloads
 
-    - Chrome Driver: baixe e estraia o zip do site oficial:
-        - http://chromedriver.chromium.org/downloads
-        Especifique o caminho até onde você instalou no script,
-        Ex: driver = webdriver.Chrome("../chromedriver.exe")
+    - selenium: instalação via pip.
+        abra o cmd(prompt de comando) e digite o comando "pip install selenium" (sem aspas)
+
+Execução:
+
+    1º Assim que estiver com a pasta disponivel, abra cmd(prompt de comando) com as teclas "windows + r",
+
+    2º Devolta na pasta, aperte o botão direito do mouse e a tecla "shift" ao mesmo tempo, na pasta baixada, 
+    procure e clique por "COPIAR COMO CAMINHO", 
+    
+    3º Voltando ao cmd, digite cd, depois tecle ctrl + v (copiar como caminho serve para pegar o caminho 
+    até a pasta). 
+
+    4º Digite "python whatsappBot.py" para inicar o programa
+
+    5º O programa pedirá o QRcode do seu whatsapp, para entrar no whatsapp web, note que pode ser usado normalmente
+
+    6º No terminal terá: O nome da pessoa ou grupo, a mensagem a ser digitada, e quantidade de vezes que será enviada.
+
+
+Considerações:
+
+    - uso de pesquisa e conhecimento apenas! sua utilização será de sua inteira responsablidade.
+    - Aproveite e teste, qualquer duvida ou problemas estarei disponivel ;)
+
+
+fonte:
+
+    whatsapp script: https://www.youtube.com/watch?v=5hr0IdVM7Qg&t=40s
