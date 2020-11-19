@@ -1,6 +1,6 @@
 #debug
 
-debug.txt
+debug.log
 
 #pycharm addons
 
@@ -9,3 +9,11 @@ debug.txt
 #vscode addons
 
 .vscode
+
+#enviroment
+
+/venv
+/env
+
+#chromedriver
+chromedriver.exe

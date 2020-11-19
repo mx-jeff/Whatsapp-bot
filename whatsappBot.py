@@ -1,28 +1,38 @@
 from selenium import webdriver
+from time import sleep
+import json
 
-while True:
-    driver = webdriver.Chrome("webdriver/chromedriver.exe")
-    driver.get('http://web.whatsapp.com')
 
-    nome = input('Entre com o nome do usuario ou grupo: ')
-    msg = input('Entre com a mensagem: ')
-    quantidade = int(input('Enter com a quantidade de mensagens: '))
+msg_tag = 'DuUXI'
+button_tag = '_2Ujuu'
 
-    #Scan the code before proceeding further
-    input('Enter anything after scanning QR code')
+driver = webdriver.Chrome("chromedriver.exe")
+driver.get('http://web.whatsapp.com')
 
-    user = driver.find_element_by_xpath(f'//span[@title = "{nome}"]')
-    user.click()
+nome = input('Entre com o nome do usuario ou grupo: ')
+msg = input('Entre com a mensagem: ')
+quantidade = int(input('Enter com a quantidade de mensagens: '))
 
-    msg_box = driver.find_element_by_class_name('_3u328')
+print(driver.get_cookies())
 
-    for i in range(quantidade):
-        msg_box.send_keys(msg)
-        button = driver.find_element_by_class_name('_3M-N-')
-        button.click()
+#Scan the code before proceeding further
+input('Enter anything after scanning QR code')
 
-    continua = str(input("Você deseja continuar? [S/N]")).upper().strip()[0]
+user = driver.find_element_by_xpath(f'//span[@title = "{nome}"]')
+user.click()
 
-    if continua == "N":
-        exit()
+msg_box = driver.find_element_by_class_name(msg_tag)
+sleep(1)
 
+for i in range(quantidade):
+    msg_box.send_keys(msg)
+    button = driver.find_element_by_class_name(button_tag)
+    button.click()
+    sleep(1)
+
+# continua = str(input("Você deseja continuar? [S/N]")).upper().strip()[0]
+
+# if continua == "N":
+#     exit()
+
+driver.quit()
